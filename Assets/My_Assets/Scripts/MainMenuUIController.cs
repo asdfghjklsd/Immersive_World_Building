@@ -66,6 +66,8 @@ public class MainMenuUIController : MonoBehaviour
         foreach (var level in availableLevels)
         {
             GameObject btnObj = Instantiate(listButtonPrefab, levelButtonContainer);
+            btnObj.transform.localScale = Vector3.one;
+            btnObj.transform.localPosition = new Vector3(btnObj.transform.localPosition.x, btnObj.transform.localPosition.y, 0f);
             btnObj.GetComponentInChildren<TMP_Text>().text = level.displayName;
 
             string sceneToLoad = level.sceneBuildName;

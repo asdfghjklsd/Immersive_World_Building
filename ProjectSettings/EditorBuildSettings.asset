@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 55daccc09a3b69647bbab145b54a3ab3
+    path: Assets/My_Assets/Scenes/Main_Menu.unity
+    guid: 75e7da8e533e334489963af24871f7a1
+  - enabled: 1
+    path: Assets/My_Assets/Scenes/TransitionScene.unity
+    guid: c1381ecf5c791e84ca93db45a15694d2
+  - enabled: 1
+    path: Assets/My_Assets/Scenes/ReplayScene.unity
+    guid: 71ca2f637db62d245ab60fcdc9b053bc
+  - enabled: 1
+    path: Assets/My_Assets/Scenes/VR_Level1.unity
+    guid: 67313f3e103f8c84ab02b3bad73a0712
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
