@@ -27,7 +27,7 @@ public class AppSessionManager : MonoBehaviour
     {
         targetLevelSceneName = levelSceneName;
         // Route to the Transition Scene first so calibration can happen
-        SceneManager.LoadScene("TransitionScene");
+        SceneManager.LoadScene(targetLevelSceneName);
     }
 
     // Called when a user selects a saved report
@@ -39,7 +39,8 @@ public class AppSessionManager : MonoBehaviour
     }
 
     // Called after calibration in Transition Scene finishes
-    public void LoadTargetLevel()
+    public void LoadTargetLevel(string levelSceneName)
+    
     {
         if (!string.IsNullOrEmpty(targetLevelSceneName))
         {
